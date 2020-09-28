@@ -25,6 +25,9 @@ void C137::Morty(int start, int stop, int step) {
         else cout << i << ": " << endl;
     }
 }
+void C137::Morty(int start, int stop) {
+    Morty(start, stop, 1);
+}
 // =========================================================================== // 
 
 
@@ -41,6 +44,9 @@ void Z286::Morty(int start, int stop, int step) {
         else if (i % 3 == 0) { cout << i << ": wwA" << endl; }
         else cout << i << ": " << endl;
     }
+}
+void Z286::Morty(int start, int stop) {
+    Morty(start, stop, 1);
 }
      
     

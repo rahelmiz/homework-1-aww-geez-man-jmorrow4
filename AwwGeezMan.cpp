@@ -53,10 +53,10 @@ int main (int ac, char** av) {
 		demension = *(av + ac - 1);
 
 		if (demension.compare(s1) == 0) {
-			C137::Morty(start1, stop1, 1);
+			C137::Morty(start1, stop1);
 		}
 		else if (demension.compare(s2) == 0) {
-			Z286::Morty(start1, stop1, 1);
+			Z286::Morty(start1, stop1);
 		}
 		else {
 			cout << "ERROR: Unknown dimension!!" << endl;
