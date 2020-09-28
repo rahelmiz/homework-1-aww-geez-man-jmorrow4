@@ -32,49 +32,48 @@ int main (int ac, char** av) {
 	// ./AwwGeezMan {start} {stop} {dimension}
 	// or 
 	// ./AwwGeezMan {start} {stop} {step} {dimension}
-	if (ac != 4 and ac != 5) {
-		cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)" 
-			<< endl;
-		cout << "(1)\t./AwwGeezMan {start} {stop} {dimension}" << endl;
-		cout << "(2)\t./AwwGeezMan {start} {stop} {step} {dimension}" << endl;
-		
-		return -1;
-	}
-	int start1, stop1, step1;
+
+	int start, stop, step;
 	string demension;
 	string s1 = "C137";
 	string s2 = "Z286";
 
+	if (ac != 4 and ac != 5) {
+		cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)"
+			<< endl;
+		cout << "(1)\t./AwwGeezMan {start} {stop} {dimension}" << endl;
+		cout << "(2)\t./AwwGeezMan {start} {stop} {step} {dimension}" << endl;
 
+		return -1;
+	}
 	if (ac == 4) {
 		
-		start1 = atoi(*(av + 1));
-		stop1 = atoi(*(av + 2));
+		start = atoi(*(av + 1));
+		stop = atoi(*(av + 2));
 		demension = *(av + ac - 1);
 
 		if (demension.compare(s1) == 0) {
-			C137::Morty(start1, stop1);
+			C137::Morty(start, stop);
 		}
 		else if (demension.compare(s2) == 0) {
-			Z286::Morty(start1, stop1);
+			Z286::Morty(start, stop);
 		}
 		else {
 			cout << "ERROR: Unknown dimension!!";
 		}
 	}
+	if(ac == 5) {
 
-	if (ac == 5) {
-
-		start1 = atoi(*(av + 1));
-		stop1 = atoi(*(av + 2));
-		step1 = atoi(*(av + 3));
+		start = atoi(*(av + 1));
+		stop = atoi(*(av + 2));
+		step = atoi(*(av + 3));
 		demension = *(av + ac - 1);
 	
 		if (demension.compare(s1) == 0) {
-			C137::Morty(start1, stop1, step1);
+			C137::Morty(start, stop, step);
 		}
 		else if (demension.compare(s2) == 0) {
-			Z286::Morty(start1, stop1, step1);
+			Z286::Morty(start, stop, step);
 		}
 		else {
 			cout << "ERROR: Unknown dimension!!";
