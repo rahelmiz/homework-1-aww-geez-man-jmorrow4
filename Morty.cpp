@@ -19,7 +19,7 @@ using namespace Z286;
 
 
 void C137::Morty(int start, int stop, int step) {
-    cout << "Morty C137 says: " << endl;
+    cout << "Morty C137 says:" << endl;
     for (int i = start; i <= stop; i = i + step) {
         if (i % 15 == 0) { cout << i << ": Aww Geez Man" << endl; }
         else if (i % 5 == 0) { cout << i << ": Geez" << endl; }
@@ -39,7 +39,7 @@ void C137::Morty(int start, int stop) {
 
 
 void Z286::Morty(int start, int stop, int step) {
-    cout << "Morty Z286 says: " << endl;
+    cout << "Morty Z286 says:" << endl;
     for (int i = start; i <= stop; i = i + step) {
         if (i % 15 == 0) { cout << i << ": naM zeeG wwA" << endl; }
         else if (i % 5 == 0) { cout << i << ": zeeG" << endl; }

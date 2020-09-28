@@ -59,7 +59,7 @@ int main (int ac, char** av) {
 			Z286::Morty(start, stop);
 		}
 		else {
-			cout << "ERROR: Unknown dimension!!";
+			cout << "ERROR: Unknown dimension!!" << endl;
 		}
 	}
 	if(ac == 5) {
@@ -76,7 +76,7 @@ int main (int ac, char** av) {
 			Z286::Morty(start, stop, step);
 		}
 		else {
-			cout << "ERROR: Unknown dimension!!";
+			cout << "ERROR: Unknown dimension!!" << endl;
 		}
 	}
 
