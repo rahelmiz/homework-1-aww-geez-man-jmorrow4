@@ -53,12 +53,12 @@ int main (int ac, char** av) {
 		demension = *(av + ac - 1);
 
 		if (demension.compare(s1) == 0) {
-			cout << "Morty C137 says:" << endl;
+			cout << "Morty C137 says: " << endl;
 	
 			C137::Morty(start1, stop1, 1);
 		}
 		else if (demension.compare(s2) == 0) {
-			cout << "Morty Z286 says:" << endl;
+			cout << "Morty Z286 says: " << endl;
 			
 			Z286::Morty(start1, stop1, 1);
 		}
@@ -75,12 +75,12 @@ int main (int ac, char** av) {
 		demension = *(av + ac - 1);
 	
 		if (demension.compare(s1) == 0) {
-			cout << "Morty C137 says:" << endl;
+			cout << "Morty C137 says: " << endl;
 			
 			C137::Morty(start1, stop1, step1);
 		}
 		else if (demension.compare(s2) == 0) {
-			cout << "Morty Z286 says:" << endl;
+			cout << "Morty Z286 says: " << endl;
 			
 			Z286::Morty(start1, stop1, step1);
 		}
