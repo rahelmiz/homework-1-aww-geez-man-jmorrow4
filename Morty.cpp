@@ -26,7 +26,7 @@ void C137::Morty(int start, int stop, int step) {
     }
 }
 void C137::Morty(int start, int stop) {
-    Morty(start, stop, 1);
+   C137::Morty(start, stop, 1);
 }
 // =========================================================================== // 
 
@@ -46,7 +46,7 @@ void Z286::Morty(int start, int stop, int step) {
     }
 }
 void Z286::Morty(int start, int stop) {
-    Morty(start, stop, 1);
+    Z286::Morty(start, stop, 1);
 }
      
     
