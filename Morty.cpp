@@ -9,6 +9,8 @@
 
 // Include the Morty header file
 #include "Morty.hpp"
+#include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 // =========================================================================== // 
@@ -17,7 +19,7 @@ using namespace std;
 using namespace C137;
 
 
-void Morty(int start, int stop, int step) {
+void C137::Morty(int start, int stop, int step) {
     for (int i = start; i <= stop; i = i + step) {
 
         if (i % 15 == 0) { cout << i << ": Aww Geez Man" << endl; }
@@ -35,7 +37,7 @@ void Morty(int start, int stop, int step) {
 
 using namespace Z286;
 
-void Morty(int start, int stop, int step) {
+void Z286::Morty(int start, int stop, int step) {
     for (int i = start; i <= stop; i = i + step) {
 
         if (i % 15 == 0) { cout << i << ": naM zeeG wwA" << endl; }

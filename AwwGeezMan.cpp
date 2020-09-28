@@ -40,27 +40,27 @@ int main (int ac, char** av) {
 		
 		return -1;
 	}
-	int start, stop, step;
-	istringstream iss;
+	int start1, stop1, step1;
 	string demension;
-	string line;
 	string s1 = "C137";
 	string s2 = "Z286";
 
 
 	if (ac == 4) {
 		
-		start = atoi(*(av + 1));
-		stop = atoi(*(av + 2));
+		start1 = atoi(*(av + 1));
+		stop1 = atoi(*(av + 2));
 		demension = *(av + ac - 1);
 
 		if (demension.compare(s1) == 0) {
+			using namespace C137;
 	
-			C137::Morty(start, stop, 1);
+			C137::Morty(start1, stop1, 1);
 		}
 		else if (demension.compare(s2) == 0) {
+			using namespace Z286;
 			
-			Z286::Morty(start, stop, 1);
+			Z286::Morty(start1, stop1, 1);
 		}
 		else {
 			cout << "ERROR: Unknown dimension!!" << endl;
@@ -69,18 +69,20 @@ int main (int ac, char** av) {
 
 	if (ac == 5) {
 
-		start = atoi(*(av + 1));
-		stop = atoi(*(av + 2));
-		step = atoi(*(av + 3));
+		start1 = atoi(*(av + 1));
+		stop1 = atoi(*(av + 2));
+		step1 = atoi(*(av + 3));
 		demension = *(av + ac - 1);
 	
 		if (demension.compare(s1) == 0) {
+			using namespace C137;
 			
-			C137::Morty(start, stop, step);
+			C137::Morty(start1, stop1, step1);
 		}
 		else if (demension.compare(s2) == 0) {
+			using namespace Z286;
 			
-			Z286::Morty(start, stop, step);
+			Z286::Morty(start1, stop1, step1);
 		}
 		else {
 			cout << "ERROR: Unknown dimension!!" << endl;
